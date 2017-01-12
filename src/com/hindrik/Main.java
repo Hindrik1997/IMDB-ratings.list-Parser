@@ -62,7 +62,7 @@ class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+    /*
         try {
             seriesOutput.write("Title|Year of release|Quarter|Episode title|Season nr|Episode nr|Rating Major|Rating Minor|Voters");
         } catch (IOException e) {
@@ -79,13 +79,13 @@ class Main {
             moviesOutput.write("Title|Year of release|Quarter|Medium|RatingMajor|RatingMinor|Voters");
         } catch (IOException e) {
             e.printStackTrace();
-        }
-
+        }*/
+        /*
         try {
             moviesOutput.newLine();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
         try (Stream<String> stream = Files.lines(Paths.get(args[0]), StandardCharsets.ISO_8859_1)) {
                 stream.forEachOrdered(Main::processLocation);
