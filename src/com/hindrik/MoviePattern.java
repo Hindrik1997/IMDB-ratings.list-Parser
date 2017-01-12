@@ -22,6 +22,7 @@ class MoviePattern extends PatternSet{
     protected Object process(String input, Matcher matcher) {
         Movie m = new Movie();
 
+        m.set_voters(matcher.group(1));
         m.set_ratingMajor(matcher.group(2));
         m.set_ratingMinor(matcher.group(3));
         m.set_title(matcher.group(4));
