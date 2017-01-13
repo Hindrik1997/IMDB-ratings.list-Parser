@@ -92,7 +92,16 @@ class Main {
         } catch (IOException io) {
             io.printStackTrace();
         }
-
+        try {
+            seriesOutput.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            moviesOutput.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
